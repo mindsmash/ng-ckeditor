@@ -101,7 +101,7 @@ app.directive('ckeditor', ['$timeout', '$q', function ($timeout, $q) {
                     });
                 }
 
-                //instance.on('pasteState',   setModelData);
+                instance.on('pasteState',   setModelData);
                 instance.on('change',       setModelData);
                 instance.on('blur',         setModelData);
                 //instance.on('key',          setModelData); // for source view
